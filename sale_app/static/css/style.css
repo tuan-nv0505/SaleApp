@@ -13,7 +13,7 @@
     margin-bottom: 20px;
 }
 
-.product_table {
+table.product {
     border-collapse: collapse;
 }
 
@@ -22,20 +22,22 @@ tr, td, th {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
-ul {
+ul.categories {
     margin: 50px;
     list-style: none;
 }
 
-.categories a {
+ul.categories a {
     text-decoration: none;
     font-size: 20px;
 }
 
-.categories > a {
+ul.categories > a {
     color: peru;
     display: inline-block;
     padding: 10px;

@@ -11,7 +11,7 @@
 <body>
     <div class="header">Danh mục sản phẩm</div>
     <div class="container">
-        <table border="1" class="product_table">
+        <table border="1" class="product">
             <tr>
                 <th></th>
                 <th>Tên sản phẩm</th>
@@ -21,11 +21,11 @@
             {% for product in products %}
             <tr>
                 <td>
-                    <img style="width: 200px;" src="{{ url_for('static', filename='images/' ~ product.image) }}" alt="{{ product.name }}">
+                    <img style="width: 120px;" src="{{ url_for('static', filename='images/{}'.format(product.image)) }}" alt="{{ product.name }}">
                 </td>
                 <td>{{ product.name }}</td>
                 <td>{{ product.description }}</td>
-                <td>{{ product.price }} VNĐ</td>
+                <td>{{ '{:,.0f}'.format(product.price) }} VNĐ</td>
             </tr>
             {% endfor %}
         </table>
