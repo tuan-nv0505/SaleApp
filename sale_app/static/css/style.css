@@ -1,0 +1,57 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product_table {
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    padding: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+ul {
+    margin: 50px;
+    list-style: none;
+}
+
+.categories a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.categories > a {
+    color: peru;
+    display: inline-block;
+    padding: 10px;
+    background-color: darkblue;
+    margin: 5px 0px 0px 5px;
+    border-radius: 45px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.category {
+    color: peru;
+    display: inline-block;
+    padding: 10px;
+    background-color:aquamarine;
+    margin: 5px 0px 0px 5px;
+    border-radius: 45px;
+}
+

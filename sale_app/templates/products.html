@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Sản phẩm</title>
+</head>
+
+<body>
+    <div class="header">Danh mục sản phẩm</div>
+    <div class="container">
+        <table border="1" class="product_table">
+            <tr>
+                <th></th>
+                <th>Tên sản phẩm</th>
+                <th>Thông tin sản phẩm</th>
+                <th>Giá sản phẩm</th>
+            </tr>
+            {% for product in products %}
+            <tr>
+                <td>
+                    <img style="width: 200px;" src="{{ url_for('static', filename='images/' ~ product.image) }}" alt="{{ product.name }}">
+                </td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.price }} VNĐ</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>
